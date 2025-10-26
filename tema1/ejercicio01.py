@@ -1,0 +1,5 @@
+dato=input("Indica un texto:")
+longitud=len(dato)
+print(dato)
+# print("Contiene: " + longitud + " caracteres")    # Para usar esta hay que convertir a texto la variable longitud -> longitud=str(longitud)   
+print("Contiene {numero} de caracteres.".format(numero=longitud))

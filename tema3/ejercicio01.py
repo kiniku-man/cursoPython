@@ -9,17 +9,14 @@ second = ["day", "day", "sday", "nesday", "rsday", "day", "urday"]
 ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 '''
 
-first = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]   # Primera lista
-second = ["day", "day", "sday", "nesday", "rsday", "day", "urday"]  # Segunda lista
+first = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+second = ["day", "day", "sday", "nesday", "rsday", "day", "urday"]
 
+x=len(first)
 listaFinal=list()
 
-long=len(first)
+for i in range(0,x):
+    datos=first[i]+second[i]
+    listaFinal.append(datos)
 
-for i in range(0,long):
-    print(first[i] + ", " + second[i])
-    # p1=first[i]
-    # p2=second[i]
-    # dato=p1+p2
-    listaFinal.append(first[i]+second[i])
 print(listaFinal)

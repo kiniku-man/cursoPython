@@ -7,7 +7,8 @@ Write a program that creates a loop asking the user to input a number.
 
         Before you enter the number, verify if the number is already in the set.
 
-        If the number is already in the set, then update a counter that tracks how many entries are not added to the set.
+        If the number is already in the set, then update a counter that tracks how many entries are 
+        not added to the set.
 
     Just before the program ends, print the following:
 
@@ -15,3 +16,18 @@ Write a program that creates a loop asking the user to input a number.
 
         The number of elements that were NOT added to the set on the second line
 '''
+
+lista=set()
+texto=("Introduzca el dato o end para salir: ")
+x=0 # Contador de veces que no añadimos dato al set
+while True:
+    dato=input(texto)
+    if not dato in lista and dato != "end":
+        lista.add(dato)
+    elif dato == "end":
+        break
+    else:
+        x=x+1
+
+print(lista)
+print(x)

@@ -20,3 +20,18 @@ while True:
 
         The sum of the elements in the list on the second line
 '''
+datos=list()
+prompt = "Enter a number (or the word 'end' to quit) "
+while True:
+    data = input(prompt)
+    if data == "end":
+        break
+    #Remainder of while loop goes here
+    datos.append(int(data))
+
+print(datos)
+x=0
+for i in datos:
+    x=x+i
+print(x)
+    
